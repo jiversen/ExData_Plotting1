@@ -29,7 +29,7 @@ data2$datetime <- strptime(data2$datetime,format="%Y-%m-%d %H:%M:%S")
 ## =====================
 
 ## plot 3: time series of sub metering
-#find range
+#find range (acknowledgment: http://cran.r-project.org/doc/contrib/Lemon-kickstart/kr_addat.html)
 yrange<-range(c(data2$Sub_metering_1,data2$Sub_metering_2,data2$Sub_metering_3))
 
 png(file="plot3.png",width=480,height=480)
